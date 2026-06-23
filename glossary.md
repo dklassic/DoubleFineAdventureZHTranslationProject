@@ -8,6 +8,7 @@ This is a living glossary for proofreading the *Double Fine Adventure!* Traditio
 - Prefer consistency over ad hoc translation choices.
 - Keep official English titles in English unless a final Traditional Chinese title is explicitly chosen.
 - Use full-width punctuation in Chinese text.
+- For initials and acronyms, keep punctuation style consistent with Chinese text.
 - If a term is uncertain, mark it as `TBD` and resolve it before final QA.
 
 ## Project Context
@@ -25,6 +26,7 @@ This is a living glossary for proofreading the *Double Fine Adventure!* Traditio
 | Act 1 | 第一幕 | Normalize with `Act One`. |
 | Act 2 | 第二幕 | Use for *Broken Age* Act 2. |
 | Act Two | 第二幕 | Normalize with `Act 2`. |
+| Part Two | 第二部 / 第二段 | Use by context; do not confuse with *Broken Age* `Act Two`. |
 
 ## Game Titles
 
@@ -37,11 +39,18 @@ This is a living glossary for proofreading the *Double Fine Adventure!* Traditio
 | Grim Fandango | 《Grim Fandango》 | Keep official English title. |
 | Full Throttle | 《Full Throttle》 | Keep official English title. |
 | Day of the Tentacle | 《Day of the Tentacle》 | Do not translate literally as `天梯日` or similar. |
+| Monkey Island | 《Monkey Island》 | Keep official English title unless referring generically to the island. |
+| The Secret of Monkey Island | 《The Secret of Monkey Island》 | Keep official English title. |
 | Massive Chalice | 《Massive Chalice》 | Keep official English title. |
 | Costume Quest | 《Costume Quest》 | Keep official English title. |
 | Stacking | 《Stacking》 | Keep official English title. |
 | Iron Brigade | 《Iron Brigade》 | Keep official English title. |
 | Trenched | 《Trenched》 | Earlier title for *Iron Brigade*; verify context. |
+| The Cave | 《The Cave》 | Keep official English title. |
+| Once Upon a Monster | 《Once Upon a Monster》 | Keep official English title. |
+| Happy Action Theater | 《Happy Action Theater》 | Keep official English title. |
+| Spacebase | 《Spacebase》 | Keep official English title or project name by context. |
+| Amnesia Fortnight | 《Amnesia Fortnight》 | Double Fine prototype event/title; keep English. |
 | Machinarium | 《Machinarium》 | Keep official English title. |
 
 ## Companies, Platforms, And Events
@@ -76,6 +85,22 @@ This is a living glossary for proofreading the *Double Fine Adventure!* Traditio
 | Eurogamer | Eurogamer | Publication name. |
 | Edge | Edge | Publication name. |
 | The Guardian | The Guardian | Publication name. |
+| 2 Player Productions | 2 Player Productions | Documentary production company; do not translate literally. |
+| Indie Fund | Indie Fund | Funding group; keep English unless explanatory context requires translation. |
+| Humble Bundle | Humble Bundle | Store/bundle platform. |
+| Humble | Humble | Use when source shortens `Humble Bundle`; verify context. |
+| Limited Run | Limited Run | Physical release partner; keep English. |
+| Fangamer | Fangamer | Merchandise/physical goods partner; keep English. |
+| iam8bit | iam8bit | Merchandise/physical goods partner; preserve lowercase style. |
+| E3 | E3 | Event name. |
+| DICE | DICE | Event/award context; keep acronym. |
+| BAFTA | BAFTA | Award/event context; keep acronym. |
+| PAX Prime | PAX Prime | Event name. |
+| PAX East | PAX East | Event name. |
+| gamescom | gamescom | Event name; preserve lowercase official style. |
+| Metacritic | Metacritic | Review aggregator. |
+| backer forums | 贊助者論壇 | Kickstarter/community context. |
+| Steam forums | Steam 論壇 | Platform community context. |
 
 ## Game Development And Business Terms
 
@@ -130,6 +155,34 @@ This is a living glossary for proofreading the *Double Fine Adventure!* Traditio
 | key | 序號 | Steam/game key context. |
 | backer key | 贊助者序號 | Game key for Kickstarter backers. |
 | community manager | 社群經理 | Role title. |
+| project lead | 專案負責人 | Role title. |
+| creative director | 創意總監 | Role title. |
+| art director | 美術總監 | Role title. |
+| producer | 製作人 | Role title. |
+| programmer | 程式設計師 | Role title. |
+| designer | 設計師 | Role title; use `遊戲設計師` if clarity is needed. |
+| animator | 動畫師 | Role title. |
+| voice actor | 配音員 | Role title. |
+| voice director | 配音指導 | Role title. |
+| documentary crew | 紀錄片團隊 | 2 Player crew context. |
+| release date | 發行日 | Game release context. |
+| review score | 評分 | Review context. |
+| physical edition | 實體版 | Physical release context. |
+| special edition | 特別版 | Product/release context. |
+
+## Broken Age In-World Terms
+
+| English | Preferred Traditional Chinese | Notes |
+| --- | --- | --- |
+| Cloud Colony | Cloud Colony | In-world location; keep English unless a final localized naming pass is chosen. |
+| Meriloft | Meriloft | In-world location. |
+| Shellmound | Shellmound | In-world location. |
+| Plague Dam | Plague Dam | In-world location; verify context before translating literally. |
+| Lumberjack | Lumberjack | Character/role name when capitalized; translate generically as `伐木工` only when not a proper name. |
+| Space Weaver | Space Weaver | Character/entity name. |
+| Redbot | Redbot | Robot/entity name; verify context. |
+| Maidens Feast | Maidens Feast | In-world event; keep English unless final localization chooses a Chinese form. |
+| Maiden's Feast | Maiden’s Feast | Normalize apostrophe when possible. |
 
 ## People And Speaker Labels
 
@@ -155,10 +208,15 @@ Default style: keep English speaker labels with a full-width colon, such as `Sch
 | Ryken | Ryken | Frequent speaker. |
 | Gardner | Gardner | Frequent speaker. |
 | Spafford | Spafford | Frequent speaker. |
+| Ben | Ben | Frequently appears as a person reference in Episode 19. |
 | Min | Min | Frequent speaker. |
 | Chan | Chan | Frequent speaker. |
 | Gilbert | Gilbert | Ron Gilbert. |
 | Ron Gilbert | Ron Gilbert | Mentioned as adventure game creator/designer. |
+| Erik Wolpaw | Erik Wolpaw | Writer/designer; appears as `Wolpaw`. |
+| Wolpaw | Wolpaw | Speaker label/name. |
+| Peter Chan | Peter Chan | Artist/designer; appears in source context. |
+| Choy | Choy | Speaker label/name. |
 | Black | Black | Jack Black when context indicates the actor. |
 | Jack Black | Jack Black | Actor/musician. |
 | Muir | Muir | Speaker label. |
@@ -178,6 +236,28 @@ Default style: keep English speaker labels with a full-width colon, such as `Sch
 | Garner | Garner | Speaker label. |
 | Kaufman | Kaufman | Speaker label. |
 | Fietzek | Fietzek | Speaker label. |
+| Correia | Correia | Speaker label. |
+| Dutton | Dutton | Speaker label. |
+| Hale | Hale | Speaker label. |
+| O'Rourke | O’Rourke | Speaker label; normalize apostrophe when possible. |
+| Johnstone | Johnstone | Speaker label. |
+| Inversin | Inversin | Speaker label. |
+| Lee | Lee | Speaker label. |
+| Schmitz | Schmitz | Speaker label. |
+| Ray | Ray | Speaker label. |
+| Miller | Miller | Speaker label. |
+| Sliva | Sliva | Speaker label. |
+| Shahani | Shahani | Speaker label. |
+| Hackett | Hackett | Speaker label. |
+| Sullivan | Sullivan | Speaker label. |
+| Roush | Roush | Speaker label. |
+| Skillman | Skillman | Speaker label. |
+| McGarry | McGarry | Speaker label. |
+| Hanson | Hanson | Speaker label; distinguish from `Hansen`. |
+| Melian | Melian | Speaker label. |
+| Camden | Camden | Speaker label. |
+| Liu | Liu | Speaker label. |
+| Horvitz | Horvitz | Speaker label. |
 | Vella | Vella | Main character in *Broken Age*. |
 | Shay | Shay | Main character in *Broken Age*. |
 | Marek | Marek | Character in *Broken Age*. |
@@ -203,11 +283,27 @@ Default style: keep English speaker labels with a full-width colon, such as `Sch
 | Phone | 電話 | Use for phone audio. |
 | Host | 主持人 | Generic role. |
 | Team Member | 團隊成員 | Generic role. |
+| Web Streamer | 實況主 / 網路直播主 | Choose by context. |
+| Nordic Rep | Nordic 代表 | Representative from Nordic; keep `Nordic` in English. |
+| Audition Voice | 試鏡聲音 | Generic audition label. |
+| Technician | 技術人員 | Generic role. |
+| Man | 男子 | Generic label. |
+| Young Man | 年輕男子 | Generic label. |
+| Man #1 | 男子 1 | Generic label. |
+| Man #2 | 男子 2 | Generic label. |
+| Daughter | 女兒 | Generic/family label. |
+| Group | 眾人 | Generic group label. |
+| Scott's Dad | Scott 的爸爸 | Generic/family label; keep `Scott` in English. |
+| Newscaster | 新聞主播 | Generic role. |
 | Narrator | 旁白 | If present. |
 | Music | 音樂 | Bracket cue: `[音樂]`. |
 | Laughter | 笑聲 | Bracket cue: `[笑聲]`. |
 | Applause | 掌聲 | Bracket cue: `[掌聲]`. |
 | Yelling | 叫喊聲 | Bracket cue: `[叫喊聲]`. |
+| Murmuring | 低語聲 / 嘈雜低語 | Bracket cue; choose by scene. |
+| Phone voice | 電話 | Use for phone audio speaker label. |
+| Offscreen Voice | 畫外音 | Normalize with `Offscreen voice`. |
+| [Music] Speaker | `[音樂] Speaker：` | Preserve cue plus speaker label, localized cue and full-width colon. |
 
 ## Machine Translation Outputs To Avoid
 

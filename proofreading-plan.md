@@ -23,6 +23,17 @@ The current set contains 20 CSV files and about 10,979 subtitle rows. Translatio
 
 Episode summaries have been written to `summary/01.md` through `summary/20.md` based on the English `Content` column.
 
+## Latest Pretranslation Sweep
+
+A repository sweep of `pretranslated csv/*.csv` found:
+
+- 20 files, 10,979 subtitle rows, and no empty `Content_zh` cells.
+- Major recurring titles and names are already mostly stable: `Broken Age`, `Double Fine`, `Kickstarter`, `Psychonauts`, `Day of the Tentacle`, `Monkey Island`, `Grim Fandango`, `Act One`, and `Act Two` all matched the current glossary decisions in the checked rows.
+- Obvious Mainland terms from the existing avoid list were not broadly present in the current files. The remaining risk is less terminology replacement and more context-sensitive meaning, tone, and subtitle flow.
+- Half-width punctuation appears only in small numbers in the current sweep, but still needs per-file QA because punctuation can appear inside English names, acronyms, URLs, or speaker/cue labels where context matters.
+- Speaker labels and cue-prefixed labels are broader than the current glossary originally covered, including variants such as `[Music] Schafer`, `Offscreen Voice`, `Phone voice`, `Nordic Rep`, `Web Streamer`, and many one-off interview or crowd labels.
+- Recurring *Broken Age* place and character terms such as `Cloud Colony`, `Shellmound`, `Meriloft`, `Space Weaver`, `Mog Chothra`, `Vella`, `Shay`, and `Marek` should be checked carefully for consistency.
+
 ## Recommended Output Workflow
 
 Overwriting `pretranslated csv/` directly.
@@ -37,7 +48,20 @@ Suggested pipeline:
 
 Recommended order is chronological from `01` to `20` since continuity is more important than triage.
 
-For the next manual pass, continue in triage order starting with `20_pretranslated.csv`, then `19_pretranslated.csv`, then `18_pretranslated.csv` down through `01_pretranslated.csv`.
+The latest sweep suggests the current `pretranslated csv/` files have already received some broad cleanup, so the next pass should be a manual contextual proofreading pass rather than a mechanical triage pass. Work from `01_pretranslated.csv` through `20_pretranslated.csv`, using the episode summaries to keep callbacks, character names, production milestones, and release-timeline references consistent.
+
+If time is limited, prioritize the largest and densest files first after any in-progress episode:
+
+1. `19_pretranslated.csv`
+2. `20_pretranslated.csv`
+3. `13_pretranslated.csv`
+4. `15_pretranslated.csv`
+5. `12_pretranslated.csv`
+6. `09_pretranslated.csv`
+7. `11_pretranslated.csv`
+8. `10_pretranslated.csv`
+9. `04_pretranslated.csv`
+10. `08_pretranslated.csv`
 
 ## Core Style Priorities
 
@@ -164,6 +188,9 @@ Examples:
 - Keep English surname labels unless a final decision is made to localize all names.
 - Normalize the separator to full-width colon: `Schafer：`, `Rice：`, `Offscreen：`.
 - If one subtitle contains two speakers, preserve both labels if needed for clarity.
+- Preserve sound cues before labels when present, but localize the cue and normalize the label punctuation, such as `[音樂] Schafer：`.
+- Normalize casing variants such as `Offscreen Voice`, `Offscreen voice`, and `Offscreen` according to the glossary.
+- Do not invent a speaker label when the English source does not identify the speaker.
 - Generic labels are localized globally in the first-pass output:
   - `Offscreen` / `Offscreen voice` -> `畫外音`
   - `TV` -> `電視`
@@ -176,6 +203,7 @@ Examples:
 - Inconsistent game title translations, especially `Broken Age`.
 - Incorrect machine translations of names, such as `Double Fine` becoming `雙倍精華` or `雙倍罰款`.
 - Incorrect game-title translations, such as `Psychonauts` becoming `精神分裂`.
+- Inconsistent *Broken Age* in-world terms such as `Cloud Colony`, `Shellmound`, `Meriloft`, `Space Weaver`, `Mog Chothra`, `Hexipal`, `Vella`, `Shay`, and `Marek`.
 - Literal translations of game-development terms, such as `ship`, `build`, `review key`, `publisher`, and `backer`.
 - Missing speaker labels or incorrectly translated speaker labels.
 - Dropped clauses, reversed meanings, or subtitles that do not match the English source.
@@ -209,6 +237,9 @@ Before marking a CSV complete:
 - Game titles, company names, people names, and technical terms match `glossary.md`.
 - Speaker labels use consistent punctuation.
 - Bracketed cues are consistently translated.
+- Cue-plus-speaker labels keep both parts readable, for example `[音樂] Schafer：`.
+- Recurring *Broken Age* locations, characters, and internal project terms match `glossary.md`.
+- File-specific one-off labels are either preserved in English or localized according to the same rule as comparable labels.
 - Spot-check generated SRT output for subtitle formatting.
 
 ## Automation Notes
